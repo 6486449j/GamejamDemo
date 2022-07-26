@@ -60,6 +60,7 @@
     <Compile Include="Assets\Script\Preview.cs" />
     <Compile Include="Assets\Script\Level_1.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
+    <Compile Include="Assets\Script\Tool\Portal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

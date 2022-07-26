@@ -41,4 +41,7 @@ public class PlayerController : MonoBehaviour
         // return (hit.collider != null);
         return footCollider.IsTouchingLayers(~LayerMask.GetMask("Player"));
     }
+
+    //阿USD哈UK三打哈就开始打哈就看到
+    //tesssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 }

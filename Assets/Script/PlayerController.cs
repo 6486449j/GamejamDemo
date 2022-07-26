@@ -6,8 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     public int speed = 6;
     public int jumpscale = 10;
+    public float jumpReserved = 0.1f;
     public BoxCollider2D footCollider;
     Rigidbody2D rgdBody;
+    float lastJumpInput = 0;
     // float raycastLenght = 1.1f;
     void Start()
     {
@@ -17,10 +19,17 @@ public class PlayerController : MonoBehaviour
     {
         float move = Input.GetAxis("Horizontal");
         rgdBody.velocity = new Vector2(move * speed, rgdBody.velocity.y);
-        if (Input.GetButtonDown("Jump") && onGround())
+        if (Input.GetButtonDown("Jump"))
         {
-            transform.Translate(0, jumpscale * Time.deltaTime, 0);
-            rgdBody.AddForce(new Vector2(0, jumpscale), ForceMode2D.Impulse);
+            if (rgdBody.velocity.y < 0)
+            {
+                lastJumpInput = Time.time;
+            }
+            if (onGround())
+            {
+                transform.Translate(0, jumpscale * Time.deltaTime, 0);
+                rgdBody.AddForce(new Vector2(0, jumpscale), ForceMode2D.Impulse);
+            }
         }
         // Debug.DrawLine(new Vector3(transform.position.x, transform.position.y, 0), new Vector3(transform.position.x, transform.position.y - raycastLenght, 0), Color.red);
     }

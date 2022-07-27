@@ -8,41 +8,38 @@ public class PlayerController : MonoBehaviour
     public int jumpscale = 10;
     public float jumpReserved = 0.1f;
     public BoxCollider2D footCollider;
+    public GameObject flashLight;
     Rigidbody2D rgdBody;
-    float lastJumpInput = 0;
-    // float raycastLenght = 1.1f;
+    SpriteRenderer spRenderer;
     void Start()
     {
         rgdBody = gameObject.GetComponent<Rigidbody2D>();
+        spRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
     void Update()
     {
         float move = Input.GetAxis("Horizontal");
-        rgdBody.velocity = new Vector2(move * speed, rgdBody.velocity.y);
-        if (Input.GetButtonDown("Jump"))
+        if (move < 0)
         {
-            if (rgdBody.velocity.y < 0)
-            {
-                lastJumpInput = Time.time;
-            }
-            if (onGround())
-            {
-                transform.Translate(0, jumpscale * Time.deltaTime, 0);
-                rgdBody.AddForce(new Vector2(0, jumpscale), ForceMode2D.Impulse);
-            }
+            spRenderer.flipY = true;
+            flashLight.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-        // Debug.DrawLine(new Vector3(transform.position.x, transform.position.y, 0), new Vector3(transform.position.x, transform.position.y - raycastLenght, 0), Color.red);
+        else if (move > 0)
+        {
+            spRenderer.flipY = false;
+            flashLight.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        rgdBody.velocity = new Vector2(move * speed, rgdBody.velocity.y);
+        if (Input.GetButtonDown("Jump") && onGround())
+        {
+            transform.Translate(0, jumpscale * Time.deltaTime, 0);
+            rgdBody.AddForce(new Vector2(0, jumpscale), ForceMode2D.Impulse);
+        }
     }
 
     bool onGround()
     {
-        // RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), new Vector2(0, -1), raycastLenght, ~LayerMask.GetMask("Player"));
-        // if (hit.collider != null) Debug.Log(hit.collider.name);
-        // return (hit.collider != null);
         return footCollider.IsTouchingLayers(~LayerMask.GetMask("Player"));
     }
 
-    //阿USD哈UK三打哈就开始打哈就看到
-    //tesssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-    //？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
 }

@@ -38,8 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets\Script\Main.cs" />
      <Compile Include="Assets\Script\Preview.cs" />
-     <Compile Include="Assets\Script\PlayerController.cs" />
+     <Compile Include="Assets\Script\Tool\Portal.cs" />
      <Compile Include="Assets\Script\Level_1.cs" />
+     <Compile Include="Assets\Script\PlayerController.cs" />
+     <Compile Include="Assets\Script\BackgroundMoving.cs" />
     <Reference Include="UnityEngine">
         <HintPath>G:/UnityEditer/2020.3.14f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -262,38 +264,8 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>G:/UnityEditer/2020.3.14f1c1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="YarnSpinner.Compiler">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/YarnSpinner.Compiler.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="YarnSpinner">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/YarnSpinner.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Protobuf">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="CsvHelper">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/CsvHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.TypeExtensions">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/System.Reflection.TypeExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Buffers">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/System.Numerics.Vectors.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Memory">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="Antlr4.Runtime.Standard">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/PackageCache/dev.yarnspinner.unity@2.2.1/Runtime/DLLs/Antlr4.Runtime.Standard.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>G:/UnityEditer/2020.3.14f1c1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -721,14 +693,8 @@
     <Reference Include="Unity.ShaderGraph.Editor">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="YarnSpinner.Unity">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/YarnSpinner.Unity.dll</HintPath>
-    </Reference>
     <Reference Include="Cinemachine">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="CommandsInAnAssemblyDefinition">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/CommandsInAnAssemblyDefinition.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
@@ -765,9 +731,6 @@
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="YarnSpinner.Unity.Editor">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/YarnSpinner.Unity.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>

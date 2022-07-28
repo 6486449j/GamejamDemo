@@ -15,6 +15,8 @@ public class Level_1 : MonoBehaviour
     // 大门 离开场景处
     public BoxCollider2D gate;
 
+    public GameObject sunny;
+
     bool isInApperance = true;
 
     void Start()
@@ -42,6 +44,7 @@ public class Level_1 : MonoBehaviour
             apperance.SetActive(true);
             Debug.Log("表世界");
             isInApperance = true;
+            sunny.SetActive(false);
         }
     }
 

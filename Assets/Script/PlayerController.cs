@@ -9,12 +9,14 @@ public class PlayerController : MonoBehaviour
     public float jumpReserved = 0.1f;
     public BoxCollider2D footCollider;
     public GameObject flashLight;
+    bool isLight = false;
     Rigidbody2D rgdBody;
     SpriteRenderer spRenderer;
     void Start()
     {
         rgdBody = gameObject.GetComponent<Rigidbody2D>();
         spRenderer = gameObject.GetComponent<SpriteRenderer>();
+        flashLight.SetActive(false);
     }
     void Update()
     {
@@ -34,6 +36,18 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(0, jumpscale * Time.deltaTime, 0);
             rgdBody.AddForce(new Vector2(0, jumpscale), ForceMode2D.Impulse);
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (isLight==false) { 
+                flashLight.SetActive(true);
+                isLight = true;
+            }
+            else
+            {
+                flashLight.SetActive(false);
+                isLight = false;
+            }
         }
     }
 

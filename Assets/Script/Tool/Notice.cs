@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Notice : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public GameObject notice_;
     GameObject go;
     //public BoxCollider2D bc2d;
@@ -13,7 +11,7 @@ public class Notice : MonoBehaviour
     void Start()
     {
         go = Instantiate(notice_);
-        Vector2 v2 =new Vector2(transform.position.x, transform.position.y + 2f);
+        Vector2 v2 = new Vector2(transform.position.x, transform.position.y + 2f);
         go.transform.position = v2;
         go.SetActive(false);
         Debug.Log("success");

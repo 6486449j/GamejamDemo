@@ -17,8 +17,8 @@ TagManager:
   - PastScene
   - Player
   - Ground
-  - 
-  - 
+  - ViewBound
+  - IgnoreCollision
   - 
   - 
   - 

@@ -5,38 +5,55 @@ using Cinemachine;
 
 public class Portal : MonoBehaviour
 {
-    public static Portal Instance;
-    public CinemachineConfiner cmc; 
-    public PolygonCollider2D defaults;
+    // 关卡管理器 通过其切换场景
+    public GameObject levelmanager;
+    // 是否是从现在到过去的传送
+    public bool NowToPast = true;
+    public bool isimmediate = false;
 
-    public bool isTrigger = false;
+    bool onTrigger = false;
 
-    private void Awake()
-    {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-        }
-        Instance = this;
-    }
-    void Start()
-    {
-        cmc.m_BoundingShape2D = defaults;
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
+        // 当玩家处于碰撞体内时 按键传送
+        if (onTrigger)
         {
-
+            if (isimmediate)
+            {
+                teleport();
+            }
+            else if (Input.GetKeyDown(KeyCode.Z))
+            {
+                teleport();
+            }
         }
     }
 
-    public void setBound(PolygonCollider2D pc2d) => cmc.m_BoundingShape2D = pc2d;
+    void teleport()
+    {
+        if (NowToPast)
+        {
+            levelmanager.GetComponent<PortalManager>().switchToI();
+        }
+        else
+        {
+            levelmanager.GetComponent<PortalManager>().switchToA();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            onTrigger = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            onTrigger = false;
+        }
+    }
 }

@@ -80,6 +80,6 @@ public class PlayerController : MonoBehaviour
 
     bool onGround()
     {
-        return footCollider.IsTouchingLayers(~LayerMask.GetMask("Player"));
+        return footCollider.IsTouchingLayers(~LayerMask.GetMask("Player", "ViewBound", "IgnoreCollision"));
     }
 }

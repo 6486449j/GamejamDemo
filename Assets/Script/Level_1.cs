@@ -14,6 +14,9 @@ public class Level_1 : MonoBehaviour
     public BoxCollider2D protal2;
     // 大门 离开场景处
     public BoxCollider2D gate;
+    public Animator crossfade;
+
+    // public GameObject sunny;
 
     bool isInApperance = true;
 
@@ -24,35 +27,35 @@ public class Level_1 : MonoBehaviour
 
     void Update()
     {
-        if (protal1.IsTouchingLayers(LayerMask.GetMask("Player")))
-        {
-            switchToI();
-        }
-        if (protal2.IsTouchingLayers(LayerMask.GetMask("Player")))
-        {
-            switchToA();
-        }
     }
 
-    void switchToA()
+    IEnumerator switchToA()
     {
         if (!isInApperance)
         {
+
+            crossfade.SetTrigger("Start");
+            yield return new WaitForSeconds(1);
             _internal.SetActive(false);
             apperance.SetActive(true);
             Debug.Log("表世界");
             isInApperance = true;
+            // sunny.SetActive(false);
+            crossfade.SetTrigger("End");
         }
     }
 
-    void switchToI()
+    IEnumerator switchToI()
     {
         if (isInApperance)
         {
+            crossfade.SetTrigger("Start");
+            yield return new WaitForSeconds(1);
             apperance.SetActive(false);
             _internal.SetActive(true);
             Debug.Log("里世界");
             isInApperance = false;
+            crossfade.SetTrigger("End");
         }
     }
 

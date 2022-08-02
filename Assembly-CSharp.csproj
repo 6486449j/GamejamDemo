@@ -38,13 +38,15 @@
   <ItemGroup>
      <Compile Include="Assets\Script\Tool\Notice.cs" />
      <Compile Include="Assets\Script\Main.cs" />
+     <Compile Include="Assets\Script\Tool\ScenLoader.cs" />
      <Compile Include="Assets\Script\Preview.cs" />
      <Compile Include="Assets\Script\BackgroundMoving.cs" />
+     <Compile Include="Assets\Script\Tool\PortalManager.cs" />
      <Compile Include="Assets\Script\Tool\Portal.cs" />
      <Compile Include="Assets\Script\Level_1.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
-     <Compile Include="Assets\Script\Tool\PortalManager.cs" />
-     <Compile Include="Assets\Script\Tool\ScenLoader.cs" />
+     <Compile Include="Assets\Script\Tool\PortalA3.cs" />
+     <Compile Include="Assets\Script\PlayerControllerA3.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

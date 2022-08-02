@@ -65,17 +65,6 @@ public class PlayerController : MonoBehaviour
             }
         }
         // 传送
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            if (collider2d.IsTouchingLayers(LayerMask.GetMask("PortalToPast")))
-            {
-
-            }
-            if (collider2d.IsTouchingLayers(LayerMask.GetMask("PortalToNow")))
-            {
-
-            }
-        }
     }
 
     bool onGround()

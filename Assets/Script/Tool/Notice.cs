@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class Notice : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public GameObject notice_;
+    public Vector2 posOffset = new Vector2(0, 2);
     GameObject go;
     //public BoxCollider2D bc2d;
 
     void Start()
     {
         go = Instantiate(notice_);
-        Vector2 v2 =new Vector2(transform.position.x, transform.position.y + 2f);
+        Vector2 v2 = new Vector2(transform.position.x + posOffset.x, transform.position.y + posOffset.y);
         go.transform.position = v2;
         go.SetActive(false);
-        Debug.Log("success");
+        // Debug.Log("success");
     }
 
     // Update is called once per frame

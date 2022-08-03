@@ -14,6 +14,8 @@ public class Level_1 : MonoBehaviour
         pm = gameObject.GetComponent<PortalManager>();
 
         pm._internal.SetActive(false);
+
+        A1bgm.Instance.playbgm1();
     }
 
     void Update()

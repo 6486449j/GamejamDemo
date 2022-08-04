@@ -12,34 +12,40 @@ public class PortalManager : MonoBehaviour
 
     bool isInApperance = true;
 
-    public void switchToA()
+    void Start()
+    {
+        // crossfade.gameObject.SetActive(true);
+    }
+
+    public IEnumerator switchToA()
     {
         if (!isInApperance)
         {
-            StartCoroutine(switchEffect());
+            crossfade.gameObject.SetActive(true);
+            crossfade.SetTrigger("Start");
+            yield return new WaitForSeconds(0.5f);
             _internal.SetActive(false);
             apperance.SetActive(true);
             Debug.Log("表世界");
             isInApperance = true;
-            // sunny.SetActive(false);
+            crossfade.SetTrigger("End");
+            crossfade.gameObject.SetActive(false);
         }
     }
 
-    public void switchToI()
+    public IEnumerator switchToI()
     {
         if (isInApperance)
         {
-            StartCoroutine(switchEffect());
+            crossfade.gameObject.SetActive(true);
+            crossfade.SetTrigger("Start");
+            yield return new WaitForSeconds(0.5f);
             apperance.SetActive(false);
             _internal.SetActive(true);
             Debug.Log("里世界");
             isInApperance = false;
+            crossfade.SetTrigger("End");
+            crossfade.gameObject.SetActive(false);
         }
-    }
-    public IEnumerator switchEffect()
-    {
-        crossfade.SetTrigger("Start");
-        yield return new WaitForSeconds(1);
-        crossfade.SetTrigger("End");
     }
 }

@@ -7,6 +7,7 @@ public class DialogueHandler : MonoBehaviour
 {
     public DialogueRunner dr;
     public string node;
+    public bool stopAtLeave = true;
 
     void Start()
     {
@@ -30,9 +31,13 @@ public class DialogueHandler : MonoBehaviour
         dr.StartDialogue(node);
     }
 
-    void OnTriggerExit2d(Collider2D collider)
+    void OnTriggerExit2D(Collider2D collider)
     {
-        dr.Stop();
-        dr.Clear();
+        if (stopAtLeave)
+        {
+            // Debug.Log("Stop di");
+            dr.Stop();
+            // dr.Clear();
+        }
     }
 }

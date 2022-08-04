@@ -16,7 +16,7 @@ public class Level_1 : MonoBehaviour
         // pm._internal.SetActive(false);
         pm._internal.SetActive(false);
 
-        A1bgm.Instance.playbgm1();
+        // A1bgm.Instance.playbgm1();
     }
 
     void Update()

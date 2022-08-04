@@ -77,6 +77,12 @@
     <Compile Include="Assets\Script\ContinueDialogue.cs" />
     <Compile Include="Assets\Script\Game\SoundManager.cs" />
     <Compile Include="Assets\Script\A1\A1light.cs" />
+    <Compile Include="Assets\Script\A2\A2BoundList.cs" />
+    <Compile Include="Assets\Script\A2\EnDoor.cs" />
+    <Compile Include="Assets\Script\A2\HosDoorIn.cs" />
+    <Compile Include="Assets\Script\A2\HosDoorOut.cs" />
+    <Compile Include="Assets\Script\A2\PastHosDoorIn.cs" />
+    <Compile Include="Assets\Script\A2\PastHosDoorOut.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -326,6 +332,36 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr4.Runtime.Standard">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Antlr4.Runtime.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="YarnSpinner.Compiler">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="YarnSpinner">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.TypeExtensions">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Reflection.TypeExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -800,6 +836,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="YarnSpinner.Unity.csproj">
+      <Project>{C1EF1F19-A696-A8EA-EBE2-959DAD011085}</Project>
+      <Name>YarnSpinner.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="CommandsInAnAssemblyDefinition.csproj">
+      <Project>{2DAA17E7-9EA4-E175-F2C8-CBD24B881F13}</Project>
+      <Name>CommandsInAnAssemblyDefinition</Name>
+    </ProjectReference>
+    <ProjectReference Include="YarnSpinner.Unity.Editor.csproj">
+      <Project>{519BDC5B-E600-CF74-D82D-3C7C077A3372}</Project>
+      <Name>YarnSpinner.Unity.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

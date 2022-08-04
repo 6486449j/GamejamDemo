@@ -58,23 +58,25 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Tool\Notice.cs" />
     <Compile Include="Assets\Script\PlayerControllerA3.cs" />
+    <Compile Include="Assets\Script\A1\A1Door.cs" />
     <Compile Include="Assets\Script\Main.cs" />
+    <Compile Include="Assets\Script\Tool\ExBounds.cs" />
+    <Compile Include="Assets\Script\A1\A1bgm.cs" />
     <Compile Include="Assets\Script\A1\DelaySound.cs" />
+    <Compile Include="Assets\Script\Tool\Transfer.cs" />
     <Compile Include="Assets\Script\Tool\ScenLoader.cs" />
     <Compile Include="Assets\Script\Preview.cs" />
     <Compile Include="Assets\Script\BackgroundMoving.cs" />
     <Compile Include="Assets\Script\Tool\PortalManager.cs" />
     <Compile Include="Assets\Script\A1\A1SoundManager.cs" />
     <Compile Include="Assets\Script\Tool\Portal.cs" />
+    <Compile Include="Assets\Script\Tool\DialogueHandler.cs" />
     <Compile Include="Assets\Script\A1\Level_1.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Compile Include="Assets\Script\Tool\PortalA3.cs" />
+    <Compile Include="Assets\Script\ContinueDialogue.cs" />
     <Compile Include="Assets\Script\Game\SoundManager.cs" />
-    <Compile Include="Assets\Script\A1\A1Door.cs" />
     <Compile Include="Assets\Script\A1\A1light.cs" />
-    <Compile Include="Assets\Script\A1\A1bgm.cs" />
-    <Compile Include="Assets\Script\Tool\ExBounds.cs" />
-    <Compile Include="Assets\Script\Tool\Transfer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

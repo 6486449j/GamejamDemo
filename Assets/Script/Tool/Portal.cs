@@ -33,11 +33,13 @@ public class Portal : MonoBehaviour
     {
         if (NowToPast)
         {
-            levelmanager.GetComponent<PortalManager>().switchToI();
+            StartCoroutine(levelmanager.GetComponent<PortalManager>().switchToI());
+            // levelmanager.GetComponent<PortalManager>().switchToI();
         }
         else
         {
-            levelmanager.GetComponent<PortalManager>().switchToA();
+            StartCoroutine(levelmanager.GetComponent<PortalManager>().switchToA());
+            // levelmanager.GetComponent<PortalManager>().switchToA();
         }
     }
 

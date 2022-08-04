@@ -803,7 +803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3088083, y: 0.63863015, z: -10}
+  m_LocalPosition: {x: 2.809743, y: 0.6414745, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1529,12 +1529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da86140069bb25d40a0981a09f7d6101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  apperance: {fileID: 1700762049}
-  _internal: {fileID: 147748279}
-  protal1: {fileID: 801520167}
-  protal2: {fileID: 83735968}
-  gate: {fileID: 1489967617}
-  sunny: {fileID: 617868437}
 --- !u!4 &878045544
 Transform:
   m_ObjectHideFlags: 0
@@ -1590,9 +1584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b5b2f3c751c1742aee680992563a7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cmc: {fileID: 228231851}
-  defaults: {fileID: 878045545}
-  isTrigger: 0
+  levelmanager: {fileID: 0}
+  NowToPast: 1
+  isimmediate: 0
 --- !u!1 &887699116
 GameObject:
   m_ObjectHideFlags: 3
@@ -8639,7 +8633,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   jumpscale: 10
-  jumpReserved: 0.1
   footCollider: {fileID: 2030395374}
   flashLight: {fileID: 59755709}
 --- !u!212 &1631525181
@@ -11561,6 +11554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notice_: {fileID: 5411817430074700828, guid: b02e69dd8d5a42c40a2e5b73fb433cce, type: 3}
+  posOffset: {x: 0, y: 2}
 --- !u!61 &2058901803
 BoxCollider2D:
   m_ObjectHideFlags: 0

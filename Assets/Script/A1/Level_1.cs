@@ -13,8 +13,10 @@ public class Level_1 : MonoBehaviour
         // collider2d = gameObject.GetComponent<BoxCollider2D>();
         pm = gameObject.GetComponent<PortalManager>();
 
-        // pm._internal.SetActive(false);
         pm._internal.SetActive(false);
+
+        // A1bgm.Instance.playbgm1();
+        // pm._internal.SetActive(false);
 
         // A1bgm.Instance.playbgm1();
     }

@@ -212,6 +212,7 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+<<<<<<< HEAD
     "dev.yarnspinner.unity": {
       "version": "file:C:/Users/Gracin/Downloads/YarnSpinner-Unity-2.2.1",
       "depth": 0,
@@ -220,6 +221,8 @@
         "com.unity.textmeshpro": "1.4.1"
       }
     },
+=======
+>>>>>>> 427be01e2c5d53fdd9f28a54a905e8fb46db36f1
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

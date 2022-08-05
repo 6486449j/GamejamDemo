@@ -53,10 +53,13 @@
      <Compile Include="Assets\Script\Tool\DialogueHandler.cs" />
      <Compile Include="Assets\Script\A1\Level_1.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
-     <Compile Include="Assets\Script\Tool\PortalA3.cs" />
+     <Compile Include="Assets\Script\A3\PortalA3.cs" />
      <Compile Include="Assets\Script\ContinueDialogue.cs" />
      <Compile Include="Assets\Script\Game\SoundManager.cs" />
      <Compile Include="Assets\Script\A1\A1light.cs" />
+     <Compile Include="Assets\Script\A3\Level_3.cs" />
+     <Compile Include="Assets\Script\A3\ExitDoor.cs" />
+     <Compile Include="Assets\Script\A3\KeyBox.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

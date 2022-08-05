@@ -6,6 +6,7 @@ public class Notice : MonoBehaviour
 {
     public GameObject notice_;
     public Vector2 posOffset = new Vector2(0, 2);
+    public bool show = true;
     GameObject go;
     //public BoxCollider2D bc2d;
 
@@ -21,11 +22,17 @@ public class Notice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //go.SetActive(false);
+        if (!show)
+        {
+            go.SetActive(false);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        go.SetActive(true);
+        if (show)
+        {
+            go.SetActive(true);
+        }
 
     }
     private void OnTriggerExit2D(Collider2D collision)

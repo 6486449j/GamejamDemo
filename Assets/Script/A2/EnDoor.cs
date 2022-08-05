@@ -12,6 +12,8 @@ public class EnDoor : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 A2BoundList.Instance.hospital();
+                A2Bgm.Instance.initmain();
+                A2Bgm.Instance.PlaySound();
             }
         }
     }

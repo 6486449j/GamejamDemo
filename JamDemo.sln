@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{27A35B2E-B064-19EF-A44E-A8C92B4EA826}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarnSpinner.Unity", "YarnSpinner.Unity.csproj", "{C1EF1F19-A696-A8EA-EBE2-959DAD011085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{27A35B2E-B064-19EF-A44E-A8C92B4EA826}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandsInAnAssemblyDefinition", "CommandsInAnAssemblyDefinition.csproj", "{2DAA17E7-9EA4-E175-F2C8-CBD24B881F13}"
 EndProject
@@ -15,14 +15,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{27A35B2E-B064-19EF-A44E-A8C92B4EA826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27A35B2E-B064-19EF-A44E-A8C92B4EA826}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27A35B2E-B064-19EF-A44E-A8C92B4EA826}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27A35B2E-B064-19EF-A44E-A8C92B4EA826}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C1EF1F19-A696-A8EA-EBE2-959DAD011085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C1EF1F19-A696-A8EA-EBE2-959DAD011085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1EF1F19-A696-A8EA-EBE2-959DAD011085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1EF1F19-A696-A8EA-EBE2-959DAD011085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A35B2E-B064-19EF-A44E-A8C92B4EA826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A35B2E-B064-19EF-A44E-A8C92B4EA826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A35B2E-B064-19EF-A44E-A8C92B4EA826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A35B2E-B064-19EF-A44E-A8C92B4EA826}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2DAA17E7-9EA4-E175-F2C8-CBD24B881F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2DAA17E7-9EA4-E175-F2C8-CBD24B881F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DAA17E7-9EA4-E175-F2C8-CBD24B881F13}.Release|Any CPU.ActiveCfg = Release|Any CPU

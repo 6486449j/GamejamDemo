@@ -20,5 +20,9 @@ public class HosDoorIn : MonoBehaviour
     {
         isin = true;
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isin = false;
+    }
 
 }

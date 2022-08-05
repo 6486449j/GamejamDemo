@@ -268,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.63
+  m_FalloffIntensity: 0.34
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
@@ -283,14 +283,14 @@ MonoBehaviour:
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
   m_PointLightOuterRadius: 1
-  m_PointLightDistance: 5.31
+  m_PointLightDistance: 6.02
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 1
-  m_ShapeLightFalloffOffset: {x: 1.11, y: 0}
+  m_ShapeLightFalloffSize: 2.33
+  m_ShapeLightFalloffOffset: {x: 1, y: 0}
   m_ShapePath:
-  - {x: 7.8343453, y: -1.981539, z: 0}
-  - {x: 7.832663, y: 2.257099, z: 0}
-  - {x: 0.47975945, y: -0.003614664, z: 0}
+  - {x: 8, y: -2, z: 0}
+  - {x: 8, y: 3, z: 0}
+  - {x: 0.5431659, y: -0.19089818, z: 0}

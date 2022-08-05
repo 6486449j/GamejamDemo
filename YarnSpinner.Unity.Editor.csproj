@@ -56,23 +56,23 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\YarnProjectImporterEditor.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Importers\YarnProjectImporter.cs" />
     <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\YarnImporterEditor.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\DialogueRunnerEditor.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\LanguagePropertyAttributeEditor.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\YarnSpinnerEditorWindow.cs" />
     <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\LineViewEditor.cs" />
     <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\YarnLinesAsCanvasTextEditor.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Utility\YarnEditorUtility.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\YarnSpinnerEditorWindow.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\LanguagePropertyAttributeEditor.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\InMemoryVariableStorageEditor.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Importers\YarnImporter.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Utility\YarnProjectUtility.cs" />
     <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\DialogueAdvanceInputEditor.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\YarnProjectImporterEditor.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\LocalizationEditor.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Utility\YarnPreventPlayMode.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Importers\YarnProjectImporter.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Utility\YarnProjectUtility.cs" />
     <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\YarnProjectEditor.cs" />
-    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\DialogueRunnerEditor.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Utility\YarnPreventPlayMode.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Importers\YarnImporter.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\InMemoryVariableStorageEditor.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Editors\LocalizationEditor.cs" />
     <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\AssemblyInfo.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\Utility\YarnEditorUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Editor\YarnSpinner.Unity.Editor.asmdef" />
@@ -310,50 +310,50 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.5.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Buffers">
-      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="Antlr4.Runtime.Standard">
-      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Antlr4.Runtime.Standard.dll</HintPath>
-    </Reference>
     <Reference Include="YarnSpinner.Compiler">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.Compiler.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Google.Protobuf.dll</HintPath>
-    </Reference>
     <Reference Include="YarnSpinner">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.dll</HintPath>
     </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Numerics.Vectors.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="CsvHelper">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\CsvHelper.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Reflection.TypeExtensions">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Reflection.TypeExtensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.5.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Memory">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr4.Runtime.Standard">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Antlr4.Runtime.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

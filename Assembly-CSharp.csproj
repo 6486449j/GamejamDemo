@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Tool\Notice.cs" />
+    <Compile Include="Assets\Script\A2\HosDoorIn.cs" />
     <Compile Include="Assets\Script\PlayerControllerA3.cs" />
     <Compile Include="Assets\Script\A1\A1Door.cs" />
     <Compile Include="Assets\Script\Main.cs" />
@@ -65,8 +66,10 @@
     <Compile Include="Assets\Script\A1\DelaySound.cs" />
     <Compile Include="Assets\Script\Tool\Transfer.cs" />
     <Compile Include="Assets\Script\Tool\ScenLoader.cs" />
+    <Compile Include="Assets\Script\A2\EnDoor.cs" />
     <Compile Include="Assets\Script\Preview.cs" />
     <Compile Include="Assets\Script\BackgroundMoving.cs" />
+    <Compile Include="Assets\Script\A2\PastHosDoorIn.cs" />
     <Compile Include="Assets\Script\Tool\PortalManager.cs" />
     <Compile Include="Assets\Script\A1\A1SoundManager.cs" />
     <Compile Include="Assets\Script\Tool\Portal.cs" />
@@ -74,15 +77,25 @@
     <Compile Include="Assets\Script\A1\Level_1.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Compile Include="Assets\Script\Tool\PortalA3.cs" />
+    <Compile Include="Assets\Script\A2\HosDoorOut.cs" />
     <Compile Include="Assets\Script\ContinueDialogue.cs" />
     <Compile Include="Assets\Script\Game\SoundManager.cs" />
-    <Compile Include="Assets\Script\A1\A1light.cs" />
-    <Compile Include="Assets\Script\A2\A2BoundList.cs" />
-    <Compile Include="Assets\Script\A2\EnDoor.cs" />
-    <Compile Include="Assets\Script\A2\HosDoorIn.cs" />
-    <Compile Include="Assets\Script\A2\HosDoorOut.cs" />
-    <Compile Include="Assets\Script\A2\PastHosDoorIn.cs" />
     <Compile Include="Assets\Script\A2\PastHosDoorOut.cs" />
+    <Compile Include="Assets\Script\A2\A2BoundList.cs" />
+    <Compile Include="Assets\Script\A1\A1light.cs" />
+    <Compile Include="Assets\Script\A2\Level2.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\StairDown.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\StairUp.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\Drug3.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\Drug2.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\Drug1.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\Pre1.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\Pre2.cs" />
+    <Compile Include="Assets\Script\A2\A2Audio\A2SoundManager.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\Window.cs" />
+    <Compile Include="Assets\Script\A2\A2UI.cs" />
+    <Compile Include="Assets\Script\A2\A2Audio\A2Bgm.cs" />
+    <Compile Include="Assets\Script\A2\PerformentLight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -378,29 +391,17 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Buffers">
-      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="Antlr4.Runtime.Standard">
-      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Antlr4.Runtime.Standard.dll</HintPath>
-    </Reference>
     <Reference Include="YarnSpinner.Compiler">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.Compiler.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Google.Protobuf.dll</HintPath>
-    </Reference>
     <Reference Include="YarnSpinner">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.dll</HintPath>
     </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Numerics.Vectors.dll</HintPath>
+    <Reference Include="Google.Protobuf">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="CsvHelper">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\CsvHelper.dll</HintPath>
@@ -408,8 +409,20 @@
     <Reference Include="System.Reflection.TypeExtensions">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Reflection.TypeExtensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Memory">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr4.Runtime.Standard">
+      <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Antlr4.Runtime.Standard.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

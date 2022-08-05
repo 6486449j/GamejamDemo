@@ -25,7 +25,7 @@ public class Transfer : MonoBehaviour
     {
         if (isin)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Z))
             {
                 Player.transform.position = v2;
                 //PlayerState.Instance.setIdle();
@@ -38,7 +38,7 @@ public class Transfer : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             //if(Auto)PlayerState.Instance.setPlayerV2(v2);
-            Vector2 v21 = new Vector2(transform.position.x, transform.position.y + 2f);
+            Vector2 v21 = new Vector2(transform.position.x, transform.position.y);
             notice_ = Instantiate(notice);
             notice_.transform.position = v21;
             isin = true;

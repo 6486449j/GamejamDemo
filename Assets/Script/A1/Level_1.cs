@@ -1,24 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class Level_1 : MonoBehaviour
 {
-
-    // BoxCollider2D collider2d;
-    PortalManager pm;
+    DialogueRunner dr;
 
     void Start()
     {
-        // collider2d = gameObject.GetComponent<BoxCollider2D>();
-        pm = gameObject.GetComponent<PortalManager>();
-
-        pm._internal.SetActive(false);
-
-        // A1bgm.Instance.playbgm1();
-        // pm._internal.SetActive(false);
-
-        // A1bgm.Instance.playbgm1();
+        dr = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+        dr.StartDialogue("Level1_Start");
     }
 
     void Update()

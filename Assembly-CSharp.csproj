@@ -781,8 +781,14 @@
     <Reference Include="Unity.ShaderGraph.Editor">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="YarnSpinner.Unity">
+        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/YarnSpinner.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="Cinemachine">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandsInAnAssemblyDefinition">
+        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/CommandsInAnAssemblyDefinition.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
@@ -820,20 +826,14 @@
     <Reference Include="Unity.2D.Common.Editor">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="YarnSpinner.Unity.Editor">
+        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/YarnSpinner.Unity.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="YarnSpinner.Unity">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/YarnSpinner.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="CommandsInAnAssemblyDefinition">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/CommandsInAnAssemblyDefinition.dll</HintPath>
-    </Reference>
-    <Reference Include="YarnSpinner.Unity.Editor">
-        <HintPath>D:/6486449j/Projects/UnityProjects/JamDemo/Library/ScriptAssemblies/YarnSpinner.Unity.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

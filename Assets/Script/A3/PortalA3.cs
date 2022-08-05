@@ -17,7 +17,8 @@ public class PortalA3 : MonoBehaviour
     {
         player = GameObject.Find("Player");
 
-        at = GameObject.Find("Cover").GetComponent<Animator>();
+        at = GameObject.FindGameObjectWithTag("Cover").GetComponent<Animator>();
+        // at = GameObject.Find("Cover").GetComponent<Animator>();
     }
 
     void Update()

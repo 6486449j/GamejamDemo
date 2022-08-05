@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Appearance
   - Internal
+  - Cover
   layers:
   - Default
   - TransparentFX

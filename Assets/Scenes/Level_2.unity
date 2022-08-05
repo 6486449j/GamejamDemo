@@ -15320,7 +15320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 838001046}
   - component: {fileID: 838001047}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HospitalBound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16231,7 +16231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1115809289}
   - component: {fileID: 1115809290}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RoomBound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16720,7 +16720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1381397337}
   - component: {fileID: 1381397338}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EntranceBound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27724,7 +27724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2002585452}
   - component: {fileID: 2002585453}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AssultBound
   m_TagString: Untagged
   m_Icon: {fileID: 0}

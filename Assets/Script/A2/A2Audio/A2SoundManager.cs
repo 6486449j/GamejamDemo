@@ -38,6 +38,7 @@ public class A2SoundManager : MonoBehaviour
     public void initpaper() => main.clip = paper;
     public void initdrug() => main.clip = drug;
     public void initmetal() => main.clip = openmetaldoor;
+    public void initdoor() => main.clip = opendoor;
 
     public void initbreak1() => main.clip = break1;
     public void initbreak2() => main.clip = break2;

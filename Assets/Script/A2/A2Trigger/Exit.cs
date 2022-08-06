@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PastHosDoorIn : MonoBehaviour
+public class Exit : MonoBehaviour
 {
     bool onTrigger = false;
 
@@ -10,11 +10,13 @@ public class PastHosDoorIn : MonoBehaviour
     {
         if (onTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Level2.isRun == true)
             {
-                A2BoundList.Instance.hospital();
-                A2SoundManager.Instance.initdoor();
-                A2SoundManager.Instance.PlaySound();
+                if (Input.GetKeyDown(KeyCode.Z))
+                {
+                    //GOTO A3
+                    Debug.Log("success");
+                }
             }
         }
     }

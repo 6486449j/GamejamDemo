@@ -15,11 +15,17 @@ public class Level2 : MonoBehaviour
     static public bool drug2 = false;
     static public bool drug3 = false;
 
-    static public bool isFinish = false;
+    static public bool isFinish = false;  //¼ñÍêÒ©Æ·
+
+    static public bool isRun = false; //×·Öðing
+    static public bool isOutdoor = false; //chu men
 
     public BoxCollider2D drug1box;
     public BoxCollider2D drug2box;
     public BoxCollider2D drug3box;
+
+    public GameObject Now;
+    public GameObject Past;
 
     void Start()
     {
@@ -29,6 +35,8 @@ public class Level2 : MonoBehaviour
         drug3box.enabled = false;
         A2Bgm.Instance.initenter();
         A2Bgm.Instance.PlaySound();
+        Now.SetActive(true);
+        Past.SetActive(false);
     }
 
     // Update is called once per frame

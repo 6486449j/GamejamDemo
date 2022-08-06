@@ -2,16 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PastHosDoorOut : MonoBehaviour
+public class MissionDoorOut : MonoBehaviour
 {
-    bool isin = false;
+    bool onTrigger = false;
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        if (isin)
+        if (onTrigger)
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                A2BoundList.Instance.room();
+                A2BoundList.Instance.mission();
                 A2SoundManager.Instance.initdoor();
                 A2SoundManager.Instance.PlaySound();
             }
@@ -19,10 +25,16 @@ public class PastHosDoorOut : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isin = true;
+        if (collision.gameObject.tag == "Player")
+        {
+            onTrigger = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isin = false;
+        if (collision.gameObject.tag == "Player")
+        {
+            onTrigger = false;
+        }
     }
 }

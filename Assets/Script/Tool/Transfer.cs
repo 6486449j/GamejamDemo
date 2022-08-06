@@ -7,12 +7,12 @@ public class Transfer : MonoBehaviour
     // Start is called before the first frame update
     public BoxCollider2D portal_local;
     public BoxCollider2D portal_des;
-    public GameObject notice;
+    // public GameObject notice;
     public GameObject Player;
     //public bool Auto = false;
 
     Vector2 v2;
-    GameObject notice_;
+    // GameObject notice_;
     bool isin;
 
     void Start()
@@ -39,8 +39,8 @@ public class Transfer : MonoBehaviour
         {
             //if(Auto)PlayerState.Instance.setPlayerV2(v2);
             Vector2 v21 = new Vector2(transform.position.x, transform.position.y);
-            notice_ = Instantiate(notice);
-            notice_.transform.position = v21;
+            // notice_ = Instantiate(notice);
+            // notice_.transform.position = v21;
             isin = true;
         }
     }
@@ -49,7 +49,7 @@ public class Transfer : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             isin = false;
-            Destroy(notice_.gameObject);
+            // Destroy(notice_.gameObject);
         }
     }
 }

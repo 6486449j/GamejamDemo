@@ -12,7 +12,7 @@ public class Portal : MonoBehaviour
     public bool isimmediate = false;
 
     bool onTrigger = false;
-    bool teleproting = false;
+    public bool teleproting = false;
 
     void Update()
     {
@@ -35,13 +35,13 @@ public class Portal : MonoBehaviour
         if (NowToPast)
         {
             teleproting = true;
-            StartCoroutine(levelmanager.GetComponent<PortalManager>().switchToI());
+            StartCoroutine(levelmanager.GetComponent<PortalManager>().switchToI(this));
             // levelmanager.GetComponent<PortalManager>().switchToI();
         }
         else
         {
             teleproting = true;
-            StartCoroutine(levelmanager.GetComponent<PortalManager>().switchToA());
+            StartCoroutine(levelmanager.GetComponent<PortalManager>().switchToA(this));
             // levelmanager.GetComponent<PortalManager>().switchToA();
         }
     }
@@ -59,6 +59,7 @@ public class Portal : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             onTrigger = false;
+            teleproting = false;
         }
     }
 }

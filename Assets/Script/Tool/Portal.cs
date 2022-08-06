@@ -12,11 +12,12 @@ public class Portal : MonoBehaviour
     public bool isimmediate = false;
 
     bool onTrigger = false;
+    bool teleproting = false;
 
     void Update()
     {
         // 当玩家处于碰撞体内时 按键传送
-        if (onTrigger)
+        if (onTrigger && !teleproting)
         {
             if (isimmediate)
             {
@@ -33,11 +34,13 @@ public class Portal : MonoBehaviour
     {
         if (NowToPast)
         {
+            teleproting = true;
             StartCoroutine(levelmanager.GetComponent<PortalManager>().switchToI());
             // levelmanager.GetComponent<PortalManager>().switchToI();
         }
         else
         {
+            teleproting = true;
             StartCoroutine(levelmanager.GetComponent<PortalManager>().switchToA());
             // levelmanager.GetComponent<PortalManager>().switchToA();
         }

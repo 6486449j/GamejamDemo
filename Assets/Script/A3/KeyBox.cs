@@ -26,7 +26,6 @@ public class KeyBox : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z) && onTrigger && l3.getkey == false)
         {
-            // Debug.Log("Got key");
             l3.getkey = true;
             tmp.text = "1";
             nt.show = false;

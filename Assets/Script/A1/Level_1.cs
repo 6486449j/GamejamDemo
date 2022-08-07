@@ -12,8 +12,11 @@ public class Level_1 : MonoBehaviour
     {
         dr = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
         dr.StartDialogue("Level1_Start");
+        Debug.Log(dr);
+        Debug.Log("Some");
 
         newspaper = GameObject.Find("Newspaper");
+        Debug.Log(newspaper);
     }
 
     void Update()

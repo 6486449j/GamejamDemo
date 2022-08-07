@@ -31,7 +31,7 @@ public class LightFlicker : MonoBehaviour
             // Debug.Log(Time.time);
             if (Time.time - lastFlickerTime > FlickerInterval)
             {
-                Debug.Log("Flicker");
+                //Debug.Log("Flicker");
                 if (_light.intensity == highIntensity)
                 {
                     _light.intensity = lowIntensity;

@@ -1,24 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
-public class FinalDoor : MonoBehaviour
+public class MainPerform : MonoBehaviour
 {
-    public GameObject lights;
+    // Start is called before the first frame update
+    Light2D _light;
     bool onTrigger = false;
 
+    void Start()
+    {
+        _light = gameObject.GetComponent<Light2D>();
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        if (onTrigger)
-        {
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                A4BoundList.Instance.room();
-                A4Bgm.Instance.initfinal();
-                A4Bgm.Instance.PlaySound();
-                lights.SetActive(false);
-            }
-        }
+       // _light.color = Color.red;
+       if(onTrigger) _light.color = Color.red;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

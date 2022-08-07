@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     public BoxCollider2D footCollider;
     // 手电筒
     public GameObject flashLight;
+
+    public Animator anim;
+
     bool isLight = false;
     BoxCollider2D collider2d;
     Rigidbody2D rgdBody;
@@ -33,22 +36,33 @@ public class PlayerController : MonoBehaviour
         float move = Input.GetAxis("Horizontal");
         if (move < 0)
         {
-            spRenderer.flipY = true;
+            spRenderer.flipX = true;
             flashLight.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else if (move > 0)
         {
-            spRenderer.flipY = false;
+            spRenderer.flipX = false;
             flashLight.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (rgdBody.velocity.y > 0)
+        if (rgdBody.velocity.y > 0.1f)
         {
             footCollider.gameObject.SetActive(false);
+            anim.SetBool("isJump", true);
         }
         else
         {
             footCollider.gameObject.SetActive(true);
+            anim.SetBool("isJump", false);
+        }
+
+        if( Mathf.Abs( rgdBody.velocity.x) > 0.1f)
+        {
+            anim.SetBool("isRun", true);
+        }
+        else
+        {
+            anim.SetBool("isRun", false);
         }
 
         // 跳跃
@@ -57,6 +71,7 @@ public class PlayerController : MonoBehaviour
         {
             // transform.Translate(0, jumpscale * Time.deltaTime, 0);
             rgdBody.AddForce(new Vector2(0, jumpscale), ForceMode2D.Impulse);
+
         }
 
         // 开关手电筒

@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A1C1F34B-D260-A6C9-AF5A-1446F34B57C2}</ProjectGuid>
+    <ProjectGuid>{292AA417-1099-A061-BA19-14919CE588CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>YarnSpinner.Unity</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -56,86 +56,55 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\A2\A2Trigger\Drug3.cs" />
-    <Compile Include="Assets\Script\Tool\Notice.cs" />
-    <Compile Include="Assets\Script\A2\HosDoorIn.cs" />
-    <Compile Include="Assets\Script\PlayerControllerA3.cs" />
-    <Compile Include="Assets\Script\A4\A4Audio\A4SoundManager.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\Exit.cs" />
-    <Compile Include="Assets\Script\A4\Level4.cs" />
-    <Compile Include="Assets\Script\A4\A4Trigger\FinalDoor.cs" />
-    <Compile Include="Assets\Script\A4\A4BoundList.cs" />
-    <Compile Include="Assets\Script\A2\A2Audio\A2Bgm.cs" />
-    <Compile Include="Assets\Script\A3\KeyBox.cs" />
-    <Compile Include="Assets\Script\A1\A1Door.cs" />
-    <Compile Include="Assets\Script\A2\PerformentLight.cs" />
-    <Compile Include="Assets\Script\Main.cs" />
-    <Compile Include="Assets\Script\A1\A1Footstep.cs" />
-    <Compile Include="Assets\Script\Tool\ExBounds.cs" />
-    <Compile Include="Assets\Script\A2\A2UI.cs" />
-    <Compile Include="Assets\Script\A4\MovePlatform.cs" />
-    <Compile Include="Assets\Script\A1\A1bgm.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\StairDown.cs" />
-    <Compile Include="Assets\Script\A1\DelaySound.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\Pre1.cs" />
-    <Compile Include="Assets\Script\Tool\Transfer.cs" />
-    <Compile Include="Assets\Script\A4\A4Trigger\Hole.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\MissionDoorOut.cs" />
-    <Compile Include="Assets\Script\Tool\ScenLoader.cs" />
-    <Compile Include="Assets\Script\A2\EnDoor.cs" />
-    <Compile Include="Assets\Script\Preview.cs" />
-    <Compile Include="Assets\Script\A3\Level_3.cs" />
-    <Compile Include="Assets\Script\BackgroundMoving.cs" />
-    <Compile Include="Assets\Script\A2\A2Audio\A2SoundManager.cs" />
-    <Compile Include="Assets\Script\A2\PastHosDoorIn.cs" />
-    <Compile Include="Assets\Script\A4\A4Audio\A4Bgm.cs" />
-    <Compile Include="Assets\Script\Tool\LightFlicker.cs" />
-    <Compile Include="Assets\Script\Tool\PortalManager.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\Drug2.cs" />
-    <Compile Include="Assets\Script\A1\A1SoundManager.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\Pre2.cs" />
-    <Compile Include="Assets\Script\Tool\Portal.cs" />
-    <Compile Include="Assets\Script\A1\Level_1.cs" />
-    <Compile Include="Assets\Script\A2\PerformentWall.cs" />
-    <Compile Include="Assets\Script\PlayerController.cs" />
-    <Compile Include="Assets\Script\A3\ExitDoor.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\MissionDoorIn.cs" />
-    <Compile Include="Assets\Script\A3\PortalA3.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\MissionWindow.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\Window.cs" />
-    <Compile Include="Assets\Script\A2\HosDoorOut.cs" />
-    <Compile Include="Assets\Script\ContinueDialogue.cs" />
-    <Compile Include="Assets\Script\Game\SoundManager.cs" />
-    <Compile Include="Assets\Script\A2\PastHosDoorOut.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\StairUp.cs" />
-    <Compile Include="Assets\Script\A2\A2BoundList.cs" />
-    <Compile Include="Assets\Script\A2\Level2.cs" />
-    <Compile Include="Assets\Script\A2\A2Trigger\Drug1.cs" />
-    <Compile Include="Assets\Script\A1\A1light.cs" />
-    <Compile Include="Assets\Script\A4\MainPerform.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Localization.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Commands\DefaultActions.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Commands\DispatchCommand.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DialogueRunner.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\LineMetadata.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\LineProviders\TextLineProvider.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\VariableStorageBehaviour.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Views\CharacterColorView.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Commands\YarnFunctionAttribute.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\StringTableEntry.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Views\OptionsListView.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\SerializedDictionary.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\SampleRenderDetector.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Views\DialogueCharacterNameView.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Commands\YarnStateInjectorAttribute.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Views\LineView.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\LineMetadataTableEntry.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\LanguageAttribute.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\YarnLinesAsCanvasText.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\AssemblyExtensions.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\InMemoryVariableStorage.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Culture.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Commands\YarnCommandAttribute.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Cultures.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Views\VoiceOverView.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\LineProviders\AudioLineProvider.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Commands\ActionManager.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Commands\YarnParameterAttribute.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Views\DialogueViewBase.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Commands\YarnActionAttribute.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Views\DialogueAdvanceInput.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\YarnProject.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\AssemblyInfo.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\LineProviders\LineProviderBase.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\Views\OptionView.cs" />
+    <Compile Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DialogueOption.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Reflection.TypeExtensions.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Google.Protobuf.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.Compiler.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Numerics.Vectors.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\YarnSpinner.Unity.asmdef" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Antlr4.Runtime.Standard.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Memory.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\CsvHelper.dll" />
+    <None Include="C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Buffers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -360,6 +329,15 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1c1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
     <Reference Include="YarnSpinner.Compiler">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.Compiler.dll</HintPath>
     </Reference>
@@ -369,17 +347,26 @@
     <Reference Include="YarnSpinner">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\YarnSpinner.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="CsvHelper">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\CsvHelper.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Reflection.TypeExtensions">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Reflection.TypeExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.5.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\System.Numerics.Vectors.dll</HintPath>
@@ -392,6 +379,9 @@
     </Reference>
     <Reference Include="Antlr4.Runtime.Standard">
       <HintPath>C:\Users\ok\Desktop\YarnSpinner-Unity-2.2.1\YarnSpinner-Unity-2.2.1\Runtime\DLLs\Antlr4.Runtime.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -738,146 +728,17 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="YarnSpinner.Unity.csproj">
-      <Project>{292AA417-1099-A061-BA19-14919CE588CF}</Project>
-      <Name>YarnSpinner.Unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="CommandsInAnAssemblyDefinition.csproj">
-      <Project>{38C85239-E429-B962-AEF7-B8FCFB5BC8C3}</Project>
-      <Name>CommandsInAnAssemblyDefinition</Name>
-    </ProjectReference>
-    <ProjectReference Include="YarnSpinner.Unity.Editor.csproj">
-      <Project>{0A46C59F-4D8A-AF5F-188B-9DD5427C3392}</Project>
-      <Name>YarnSpinner.Unity.Editor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -5,7 +5,15 @@ using UnityEngine;
 public class Exit : MonoBehaviour
 {
     bool onTrigger = false;
+    public BoxCollider2D portal_local;
+    public BoxCollider2D portal_des;
 
+    public GameObject Player;
+    Vector2 v2;
+    void Start()
+    {
+        v2 = portal_des.transform.position;
+    }
     void Update()
     {
         if (onTrigger)
@@ -14,8 +22,12 @@ public class Exit : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    //GOTO A3
-                    Debug.Log("success");
+                    A2Bgm.Instance.initenter();
+                    A2Bgm.Instance.PlaySound();
+                    A2SoundManager.Instance.initdoor();
+                    A2SoundManager.Instance.PlaySound();
+                    A2BoundList.Instance.exit();
+                    Player.transform.position = v2;
                 }
             }
         }

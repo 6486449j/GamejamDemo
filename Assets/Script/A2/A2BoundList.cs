@@ -13,6 +13,7 @@ public class A2BoundList : MonoBehaviour
     public PolygonCollider2D assult_;
     public PolygonCollider2D room_;
     public PolygonCollider2D mission_;
+    public PolygonCollider2D ExitBound_;
 
     public static A2BoundList Instance;
 
@@ -33,4 +34,5 @@ public class A2BoundList : MonoBehaviour
     public void assult() => ExBounds.Instance.setBound(assult_);
     public void room() => ExBounds.Instance.setBound(room_);
     public void mission() => ExBounds.Instance.setBound(mission_);
+    public void exit() => ExBounds.Instance.setBound(ExitBound_);
 }

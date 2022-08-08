@@ -15,6 +15,8 @@ public class KeyBox : MonoBehaviour
 
     bool onTrigger = false;
 
+
+
     void Start()
     {
         l3 = GameObject.Find("LevelManager").GetComponent<Level_3>();
@@ -24,7 +26,7 @@ public class KeyBox : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && onTrigger && l3.getkey == false)
+        if (onTrigger && Input.GetKeyDown(KeyCode.Z) && l3.getkey == false)
         {
             l3.getkey = true;
             tmp.text = "1";
@@ -35,11 +37,19 @@ public class KeyBox : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        onTrigger = true;
+        if (collider.gameObject.tag == "Player")
+        {
+            onTrigger = true;
+            Debug.Log("EnterCol");
+        }
     }
 
     void OnTriggerExit2D(Collider2D collider)
     {
-        onTrigger = false;
+        if (collider.gameObject.tag == "Player")
+        {
+            onTrigger = false;
+            Debug.Log("ExitCol");
+        }
     }
 }

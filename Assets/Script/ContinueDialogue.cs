@@ -6,6 +6,7 @@ using Yarn.Unity;
 public class ContinueDialogue : MonoBehaviour
 {
     LineView lv;
+    bool frist = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,8 @@ public class ContinueDialogue : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             lv.OnContinueClicked();
+            Debug.Log("continuDialogue");
         }
     }
+
 }

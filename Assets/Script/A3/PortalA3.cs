@@ -63,7 +63,7 @@ public class PortalA3 : MonoBehaviour
         at.gameObject.SetActive(true);
         at.SetTrigger("Start");
         yield return new WaitForSeconds(0.5f);
-        player.transform.position = new Vector3(distination.transform.position.x + 5, distination.transform.position.y + 0.5f, 0);
+        player.transform.position = new Vector3(distination.transform.position.x + 5, distination.transform.position.y + 1, 0);
         mainCamera.transform.position = new Vector3(distination.transform.position.x, distination.transform.position.y, -10);
         at.SetTrigger("End");
         at.gameObject.SetActive(false);
@@ -75,7 +75,7 @@ public class PortalA3 : MonoBehaviour
         at.gameObject.SetActive(true);
         at.SetTrigger("Start");
         yield return new WaitForSeconds(0.5f);
-        player.transform.position = new Vector3(distination.transform.position.x - 5, distination.transform.position.y + 0.5f, 0);
+        player.transform.position = new Vector3(distination.transform.position.x - 5, distination.transform.position.y + 1, 0);
         mainCamera.transform.position = new Vector3(distination.transform.position.x, distination.transform.position.y, -10);
         at.SetTrigger("End");
         at.gameObject.SetActive(false);
@@ -87,7 +87,7 @@ public class PortalA3 : MonoBehaviour
         at.gameObject.SetActive(true);
         at.SetTrigger("Start");
         yield return new WaitForSeconds(0.5f);
-        player.transform.position = new Vector3(distination.transform.position.x, distination.transform.position.y + 0.5f, 0);
+        player.transform.position = new Vector3(distination.transform.position.x, distination.transform.position.y + 1, 0);
         mainCamera.transform.position = new Vector3(distination.transform.position.x, distination.transform.position.y, -10);
         at.SetTrigger("End");
         at.gameObject.SetActive(false);
@@ -98,7 +98,7 @@ public class PortalA3 : MonoBehaviour
         at.gameObject.SetActive(true);
         at.SetTrigger("Start");
         yield return new WaitForSeconds(0.5f);
-        player.transform.position = new Vector3(distination.transform.position.x, distination.transform.position.y + 0.5f, 0);
+        player.transform.position = new Vector3(distination.transform.position.x, distination.transform.position.y + 1, 0);
         mainCamera.transform.position = new Vector3(distination.transform.position.x, distination.transform.position.y, -10);
         at.SetTrigger("End");
         at.gameObject.SetActive(false);

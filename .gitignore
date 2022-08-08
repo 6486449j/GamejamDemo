@@ -4,3 +4,4 @@ Library
 *.sln
 .vs
 .vscode
+ obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache

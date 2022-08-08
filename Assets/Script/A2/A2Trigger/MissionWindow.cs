@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class MissionWindow : MonoBehaviour
 {
     public GameObject metaldoor;
     public GameObject exitdoor;
+    public Animator anim;
     bool onTrigger = false;
+    DialogueRunner dr;
     void Start()
     {
-
+        dr = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
     }
 
     // Update is called once per frame
@@ -22,6 +25,8 @@ public class MissionWindow : MonoBehaviour
                 metaldoor.SetActive(true);
                 ChangeSprite(exitdoor, "Doubledoor_open");
                 Level2.isRun = true;
+                anim.SetBool("isTrigger", true);
+                dr.StartDialogue("Level2_win");
             }
         }
     }

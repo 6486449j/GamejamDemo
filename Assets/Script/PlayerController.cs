@@ -38,12 +38,13 @@ public class PlayerController : MonoBehaviour
         if (move < 0)
         {
             spRenderer.flipX = true;
-            flashLight.transform.rotation = Quaternion.Euler(0, 180, 0);
+            
+            flashLight.transform.rotation = Quaternion.Euler(0, 0, 90);
         }
         else if (move > 0)
         {
             spRenderer.flipX = false;
-            flashLight.transform.rotation = Quaternion.Euler(0, 0, 0);
+            flashLight.transform.rotation = Quaternion.Euler(0, 0, -90);
         }
 
         if (rgdBody.velocity.y < 0.001)

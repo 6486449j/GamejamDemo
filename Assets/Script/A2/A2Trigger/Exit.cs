@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using Yarn.Unity;
 
 public class Exit : MonoBehaviour
 {
@@ -16,10 +17,14 @@ public class Exit : MonoBehaviour
 
     public GameObject Player;
     Vector2 v2;
+
+    DialogueRunner dr;
+
     void Start()
     {
         v2 = portal_des.transform.position;
         lights = light_.GetComponent<Light2D>();
+        dr = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
     }
     void Update()
     {
@@ -38,6 +43,13 @@ public class Exit : MonoBehaviour
                     Player.transform.position = v2;
                     light_.SetActive(true);
                     lights.intensity = intensity;
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Z))
+                {
+                    dr.StartDialogue("Level2_exit");
                 }
             }
         }

@@ -6,6 +6,7 @@ using Yarn.Unity;
 public class Window : MonoBehaviour
 {
     public GameObject metaldoor;
+    //public Animator anim;
     bool onTrigger = false;
     static public bool thisfinish = false;
     DialogueRunner dr;

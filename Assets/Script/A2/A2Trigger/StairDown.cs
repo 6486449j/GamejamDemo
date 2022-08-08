@@ -7,6 +7,7 @@ public class StairDown : MonoBehaviour
     public GameObject floor1;
     public GameObject floor2;
     public GameObject lights;
+    public GameObject blackcover;
 
     bool onTrigger=false;
 
@@ -19,6 +20,7 @@ public class StairDown : MonoBehaviour
                 floor1.SetActive(false);
                 floor2.SetActive(true);
                 lights.SetActive(false);
+                blackcover.SetActive(false);
             }
         }
     }

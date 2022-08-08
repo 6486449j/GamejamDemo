@@ -8,17 +8,22 @@ tags:
 
 title:Level1_Start
 ---
-海报：希格斯失踪案xxxxxxxxxxx 最后一次记录在普里皮亚季。
+海报：希格斯失踪案xxxxxxxxxxx ，最后一次记录在普里皮亚季。
+===
+
+title:Level1_higgs
+---
+希格斯！
 ===
 
 title:Level2_Pre1
 ---
-获得药方
+获得残缺的药方，只有上半部分。
 ===
 
 title:Level2_Pre2
 ---
-获得药方2
+获得残缺的药方，是下半部分。后面还写着收集完后再窗口出提交。
 ===
 
 title:Level2_d_r
@@ -41,6 +46,16 @@ title:Level2_window
 在此处提交药品
 ===
 
+title:Level2_exit
+---
+门是锁上的
+===
+
+title:Level2_win
+---
+核电站爆炸了
+===
+
 title:Level3_Keybox
 ---
 获得钥匙
@@ -49,4 +64,28 @@ title:Level3_Keybox
 title:Level3_ExitDoor
 ---
 需要钥匙来开门
+===
+
+title:Level4_Final
+---
+希格斯:我们又见面了。
+
+希格斯:命运让我们再次会面于此
+
+希格斯:不一会，核电站就要爆炸了。
+
+我们没法一起走吗？
+
+希格斯:我们无法改变历史。
+
+我一直认为你没有死。我们没有别的机会了吗？
+
+希格斯:过去终将逝去，唯有死亡长存。
+
+希格斯:我们无法触碰，因为我们是两个世界上的人。
+
+放下仇恨，跟我走吧，放弃过去，前往未来。
+
+
+
 ===

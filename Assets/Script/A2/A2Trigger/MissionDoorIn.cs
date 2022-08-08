@@ -5,6 +5,7 @@ using UnityEngine;
 public class MissionDoorIn : MonoBehaviour
 {
     public GameObject missionroomout;
+    public GameObject Portal;
     bool onTrigger = false;
     void Start()
     {
@@ -26,6 +27,7 @@ public class MissionDoorIn : MonoBehaviour
                 missionroomout.SetActive(false);
                 A2Bgm.Instance.initchase();
                 A2Bgm.Instance.PlaySound();
+                Portal.SetActive(false);
             }
         }
     }

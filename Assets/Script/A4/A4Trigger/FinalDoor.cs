@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class FinalDoor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject lights;
+    bool onTrigger = false;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (onTrigger)
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                A4BoundList.Instance.room();
+                A4Bgm.Instance.initfinal();
+                A4Bgm.Instance.PlaySound();
+                lights.SetActive(false);
+            }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            onTrigger = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            onTrigger = false;
+        }
     }
 }

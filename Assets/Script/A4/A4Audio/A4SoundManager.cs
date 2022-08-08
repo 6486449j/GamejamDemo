@@ -23,8 +23,6 @@ public class A4SoundManager : MonoBehaviour
     public void PlaySound()
     {
         main.Play();
-        //main.
-        //AudioSource.PlayClipAtPoint
     }
 
 }

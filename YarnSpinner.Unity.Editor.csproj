@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{519BDC5B-E600-CF74-D82D-3C7C077A3372}</ProjectGuid>
+    <ProjectGuid>{0A46C59F-4D8A-AF5F-188B-9DD5427C3392}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>YarnSpinner.Unity.Editor</AssemblyName>
@@ -724,7 +724,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="YarnSpinner.Unity.csproj">
-      <Project>{C1EF1F19-A696-A8EA-EBE2-959DAD011085}</Project>
+      <Project>{292AA417-1099-A061-BA19-14919CE588CF}</Project>
       <Name>YarnSpinner.Unity</Name>
     </ProjectReference>
   </ItemGroup>

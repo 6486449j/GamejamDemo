@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class Window : MonoBehaviour
 {
     public GameObject metaldoor;
     bool onTrigger = false;
     static public bool thisfinish = false;
+    DialogueRunner dr;
+
+    void Start()
+    {
+        dr = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+    }
 
     void Update()
     {
@@ -14,14 +21,18 @@ public class Window : MonoBehaviour
         {
             if (onTrigger)
             {
-                if (Level2.isFinish)
+                if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    if (Input.GetKeyDown(KeyCode.Z))
+                    if (Level2.isFinish)
                     {
                         thisfinish = true;
                         A2SoundManager.Instance.initmetal();
                         A2SoundManager.Instance.PlaySound();
                         metaldoor.SetActive(false);
+                    }
+                    else
+                    {
+                        dr.StartDialogue("Level2_window");
                     }
                 }
             }

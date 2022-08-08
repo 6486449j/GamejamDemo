@@ -14,7 +14,11 @@ public class PlayerController : MonoBehaviour
     public BoxCollider2D footCollider;
     // 手电筒
     public GameObject flashLight;
+
+    public Animator anim;
+
     bool isLight = false;
+    bool isCollsion = false;
     BoxCollider2D collider2d;
     Rigidbody2D rgdBody;
     SpriteRenderer spRenderer;
@@ -33,30 +37,46 @@ public class PlayerController : MonoBehaviour
         float move = Input.GetAxis("Horizontal");
         if (move < 0)
         {
-            spRenderer.flipY = true;
+            spRenderer.flipX = true;
             flashLight.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else if (move > 0)
         {
-            spRenderer.flipY = false;
+            spRenderer.flipX = false;
             flashLight.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (rgdBody.velocity.y > 0)
+        if (rgdBody.velocity.y > 0.1f)
         {
             footCollider.gameObject.SetActive(false);
+            anim.SetBool("isJump", true);
         }
         else
         {
             footCollider.gameObject.SetActive(true);
+            anim.SetBool("isJump", false);
         }
 
+        if( Mathf.Abs( rgdBody.velocity.x) > 0.1f)
+        {
+            anim.SetBool("isRun", true);
+        }
+        else
+        {
+            anim.SetBool("isRun", false);
+        }
+
+        if (isCollsion)
+        {
+            rgdBody.velocity = new Vector2(0, rgdBody.velocity.y);
+        }
         // 跳跃
         rgdBody.velocity = new Vector2(move * speed, rgdBody.velocity.y);
         if (Input.GetButtonDown("Jump") && onGround())
         {
             // transform.Translate(0, jumpscale * Time.deltaTime, 0);
             rgdBody.AddForce(new Vector2(0, jumpscale), ForceMode2D.Impulse);
+
         }
 
         // 开关手电筒
@@ -74,6 +94,14 @@ public class PlayerController : MonoBehaviour
             }
         }
         // 传送
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isCollsion = true;
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isCollsion = false;
     }
 
     bool onGround()

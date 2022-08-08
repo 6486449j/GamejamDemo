@@ -17,6 +17,22 @@ public class PortalManager : MonoBehaviour
         // crossfade.gameObject.SetActive(true);
     }
 
+    public IEnumerator switchToA(Portal portal)
+    {
+        if (!isInApperance)
+        {
+            crossfade.gameObject.SetActive(true);
+            crossfade.SetTrigger("Start");
+            yield return new WaitForSeconds(0.5f);
+            _internal.SetActive(false);
+            apperance.SetActive(true);
+            Debug.Log("表世界");
+            isInApperance = true;
+            crossfade.SetTrigger("End");
+            crossfade.gameObject.SetActive(false);
+            portal.teleproting = false;
+        }
+    }
     public IEnumerator switchToA()
     {
         if (!isInApperance)
@@ -32,7 +48,6 @@ public class PortalManager : MonoBehaviour
             crossfade.gameObject.SetActive(false);
         }
     }
-
     public IEnumerator switchToI()
     {
         if (isInApperance)
@@ -46,6 +61,23 @@ public class PortalManager : MonoBehaviour
             isInApperance = false;
             crossfade.SetTrigger("End");
             crossfade.gameObject.SetActive(false);
+        }
+    }
+
+    public IEnumerator switchToI(Portal portal)
+    {
+        if (isInApperance)
+        {
+            crossfade.gameObject.SetActive(true);
+            crossfade.SetTrigger("Start");
+            yield return new WaitForSeconds(0.5f);
+            apperance.SetActive(false);
+            _internal.SetActive(true);
+            Debug.Log("里世界");
+            isInApperance = false;
+            crossfade.SetTrigger("End");
+            crossfade.gameObject.SetActive(false);
+            portal.teleproting = false;
         }
     }
 }

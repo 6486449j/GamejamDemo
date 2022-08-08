@@ -10,6 +10,7 @@ public class A2SoundManager : MonoBehaviour
     public AudioClip drug;
     public AudioClip openmetaldoor;
     public AudioClip opendoor;
+    public AudioClip hit;
 
     public AudioClip break1;
     public AudioClip break2;
@@ -38,6 +39,8 @@ public class A2SoundManager : MonoBehaviour
     public void initpaper() => main.clip = paper;
     public void initdrug() => main.clip = drug;
     public void initmetal() => main.clip = openmetaldoor;
+    public void initdoor() => main.clip = opendoor;
+    public void inithit() => main.clip = hit;
 
     public void initbreak1() => main.clip = break1;
     public void initbreak2() => main.clip = break2;

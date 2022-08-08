@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class Drug2 : MonoBehaviour
 {
     bool onTrigger = false;
+    DialogueRunner dr;
+
+    void Start()
+    {
+        dr = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+    }
+
     void Update()
     {
         if (onTrigger)
@@ -15,6 +23,7 @@ public class Drug2 : MonoBehaviour
                 A2SoundManager.Instance.initdrug();
                 A2SoundManager.Instance.PlaySound();
                 GameObject.Destroy(this.gameObject);
+                dr.StartDialogue("Level2_d_r");
             }
         }
     }

@@ -9,7 +9,8 @@ public class Level_3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        A3Bgm.Instance.initbgm();
+        A3Bgm.Instance.PlaySound();
     }
 
     // Update is called once per frame

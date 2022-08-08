@@ -15,6 +15,7 @@ public class Notice : MonoBehaviour
         go = Instantiate(notice_);
         Vector2 v2 = new Vector2(transform.position.x + posOffset.x, transform.position.y + posOffset.y);
         go.transform.position = v2;
+        go.GetComponent<SpriteRenderer>().sortingLayerName = "UI";
         go.SetActive(false);
         // Debug.Log("success");
     }

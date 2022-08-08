@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PastHosDoorOut : MonoBehaviour
 {
-
     bool isin = false;
     void Update()
     {
@@ -13,6 +12,8 @@ public class PastHosDoorOut : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 A2BoundList.Instance.room();
+                A2SoundManager.Instance.initdoor();
+                A2SoundManager.Instance.PlaySound();
             }
         }
     }

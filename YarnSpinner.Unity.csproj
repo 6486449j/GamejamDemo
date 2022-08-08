@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C1EF1F19-A696-A8EA-EBE2-959DAD011085}</ProjectGuid>
+    <ProjectGuid>{292AA417-1099-A061-BA19-14919CE588CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>YarnSpinner.Unity</AssemblyName>

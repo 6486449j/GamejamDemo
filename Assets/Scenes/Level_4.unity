@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_text: Last line
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
-  m_sharedMaterial: {fileID: -5271808555167640887, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: 6776209776837984092, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18290,10 +18290,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Here's a big long line of dialogue, ready to be shown to the player.
+  m_text: "\u6211\u4EEC\u53C8\u89C1\u9762\u4E86"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
-  m_sharedMaterial: {fileID: -5271808555167640887, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: 6776209776837984092, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

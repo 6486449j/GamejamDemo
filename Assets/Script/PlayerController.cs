@@ -86,11 +86,13 @@ public class PlayerController : MonoBehaviour
             {
                 flashLight.SetActive(true);
                 isLight = true;
+                anim.SetBool("isFlash", true);
             }
             else
             {
                 flashLight.SetActive(false);
                 isLight = false;
+                anim.SetBool("isFlash", false);
             }
         }
         // 传送

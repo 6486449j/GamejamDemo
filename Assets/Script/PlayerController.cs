@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
 
     bool isLight = false;
+    bool isCollsion = false;
     BoxCollider2D collider2d;
     Rigidbody2D rgdBody;
     SpriteRenderer spRenderer;
@@ -65,6 +66,10 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isRun", false);
         }
 
+        if (isCollsion)
+        {
+            rgdBody.velocity = new Vector2(0, rgdBody.velocity.y);
+        }
         // 跳跃
         rgdBody.velocity = new Vector2(move * speed, rgdBody.velocity.y);
         if (Input.GetButtonDown("Jump") && onGround())
@@ -89,6 +94,14 @@ public class PlayerController : MonoBehaviour
             }
         }
         // 传送
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isCollsion = true;
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isCollsion = false;
     }
 
     bool onGround()

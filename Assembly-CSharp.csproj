@@ -79,10 +79,11 @@
     <Compile Include="Assets\Script\A1\DelaySound.cs" />
     <Compile Include="Assets\Script\A2\A2Trigger\Pre1.cs" />
     <Compile Include="Assets\Script\Tool\Transfer.cs" />
+    <Compile Include="Assets\Script\A4\MainPerform.cs" />
     <Compile Include="Assets\Script\A4\A4Trigger\Hole.cs" />
     <Compile Include="Assets\Script\A2\A2Trigger\MissionDoorOut.cs" />
     <Compile Include="Assets\Script\Tool\ScenLoader.cs" />
-    <Compile Include="Assets\Script\A2\EnDoor.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\EnDoor.cs" />
     <Compile Include="Assets\Script\Preview.cs" />
     <Compile Include="Assets\Script\A3\Level_3.cs" />
     <Compile Include="Assets\Script\BackgroundMoving.cs" />
@@ -112,7 +113,14 @@
     <Compile Include="Assets\Script\A2\Level2.cs" />
     <Compile Include="Assets\Script\A2\A2Trigger\Drug1.cs" />
     <Compile Include="Assets\Script\A1\A1light.cs" />
-    <Compile Include="Assets\Script\A4\MainPerform.cs" />
+    <Compile Include="Assets\Script\A1\A1Footstep1.cs" />
+    <Compile Include="Assets\Script\A1\A1FirstTrigger.cs" />
+    <Compile Include="Assets\Script\A2\A2Audio\A2Footstep.cs" />
+    <Compile Include="Assets\Script\A2\A2Trigger\HitPlay.cs" />
+    <Compile Include="Assets\Script\A3\A3Audio\A3Bgm.cs" />
+    <Compile Include="Assets\Script\A3\A3Audio\A3Footstep.cs" />
+    <Compile Include="Assets\Script\A3\A3Audio\A3SoundManager.cs" />
+    <Compile Include="Assets\Script\A4\A4Audio\A4Footstep.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

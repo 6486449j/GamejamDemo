@@ -42,17 +42,18 @@ public class PlayerController : MonoBehaviour
             flashLight.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (rgdBody.velocity.y > 0)
+        if (rgdBody.velocity.y < 0.001)
         {
-            footCollider.gameObject.SetActive(false);
+            footCollider.gameObject.SetActive(true);
         }
         else
         {
-            footCollider.gameObject.SetActive(true);
+            footCollider.gameObject.SetActive(false);
         }
 
         // 跳跃
         rgdBody.velocity = new Vector2(move * speed, rgdBody.velocity.y);
+        // rgdBody.MovePosition(new Vector2(move * speed, 0));
         if (Input.GetButtonDown("Jump") && onGround())
         {
             // transform.Translate(0, jumpscale * Time.deltaTime, 0);

@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     bool isLight = false;
     bool isCollsion = false;
+    bool isBan = false;
     BoxCollider2D collider2d;
     Rigidbody2D rgdBody;
     SpriteRenderer spRenderer;
@@ -95,6 +96,23 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("isFlash", false);
             }
         }
+
+        if (isBan == true)
+        {
+            rgdBody.Sleep();
+        }
+        else
+        {
+            rgdBody.IsAwake();
+        }
+    }
+    public void Stop()
+    {
+        rgdBody.Sleep();
+    }
+    public void cont()
+    {
+        rgdBody.IsAwake();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

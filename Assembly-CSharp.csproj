@@ -132,6 +132,7 @@
     <Compile Include="Assets\Script\A3\A31\A31Audio\A31Footstep.cs" />
     <Compile Include="Assets\Script\A3\A31\A31Level.cs" />
     <Compile Include="Assets\Script\A1\NewspaperTrigger.cs" />
+    <Compile Include="Assets\Script\A4\EndPortal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

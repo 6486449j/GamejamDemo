@@ -9,6 +9,7 @@ public class FinalPlot : MonoBehaviour
     //public GameObject higgs;
     bool onTrigger = false;
     DialogueRunner dr;
+    public BoxCollider2D bc2d;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class FinalPlot : MonoBehaviour
         if (onTrigger)
         {
             dr.StartDialogue("Level4_Final");
+            bc2d.enabled = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

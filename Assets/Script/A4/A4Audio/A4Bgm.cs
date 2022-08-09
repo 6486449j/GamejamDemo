@@ -8,6 +8,7 @@ public class A4Bgm : MonoBehaviour
     public AudioClip MainBgm;
     public AudioClip EnterBgm;
     public AudioClip FinalBgm;
+    public AudioClip EndBgm;
 
     public static A4Bgm Instance;
 
@@ -22,6 +23,7 @@ public class A4Bgm : MonoBehaviour
     public void initmain() => main.clip = MainBgm;
     public void initenter() => main.clip = EnterBgm;
     public void initfinal() => main.clip = FinalBgm;
+    public void initend() => main.clip = EndBgm;
     public void PlaySound()
     {
         main.Play();

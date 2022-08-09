@@ -497,7 +497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169474193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -88.56383, y: -1, z: -10}
+  m_LocalPosition: {x: -86.34791, y: -1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_text: Last line
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
-  m_sharedMaterial: {fileID: 6776209776837984092, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: -5638832787527207368, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18293,7 +18293,7 @@ MonoBehaviour:
   m_text: "\u6211\u4EEC\u53C8\u89C1\u9762\u4E86"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
-  m_sharedMaterial: {fileID: 6776209776837984092, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: -5638832787527207368, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

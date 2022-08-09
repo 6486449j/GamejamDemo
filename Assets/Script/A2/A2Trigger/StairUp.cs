@@ -6,6 +6,7 @@ public class StairUp : MonoBehaviour
 {
     public GameObject floor1;
     public GameObject floor2;
+    public GameObject ban;
 
     bool onTrigger = false;
 
@@ -17,6 +18,10 @@ public class StairUp : MonoBehaviour
             {
                 floor1.SetActive(true);
                 floor2.SetActive(false);
+                if (Level2.isRun == true)
+                {
+                    ban.SetActive(false);
+                }
             }
         }
     }

@@ -8,6 +8,7 @@ public class MissionWindow : MonoBehaviour
     public GameObject metaldoor;
     public GameObject exitdoor;
     public GameObject higgs;
+    public GameObject doorin;
     public Animator anim;
     bool onTrigger = false;
     DialogueRunner dr;
@@ -28,6 +29,7 @@ public class MissionWindow : MonoBehaviour
                 Level2.isRun = true;
                 anim.SetBool("isTrigger", true);
                 Invoke("delay",1);
+                Invoke("delay2", 1);
                 higgs.SetActive(true);
             }
         }
@@ -35,6 +37,10 @@ public class MissionWindow : MonoBehaviour
     public void delay()
     {
         dr.StartDialogue("Level2_win");
+    }
+    public void delay2()
+    {
+        doorin.SetActive(true);
     }
     public void ChangeSprite(GameObject g, string name)
     {

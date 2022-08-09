@@ -6,6 +6,7 @@ public class MissionDoorOut : MonoBehaviour
 {
     bool onTrigger = false;
     public Animator anim;
+    public GameObject doorin;
 
     void Start()
     {
@@ -22,10 +23,8 @@ public class MissionDoorOut : MonoBehaviour
                 A2BoundList.Instance.mission();
                 A2SoundManager.Instance.initdoor();
                 A2SoundManager.Instance.PlaySound();
+                doorin.SetActive(false);
             }
-            /*if(Level2.isRun = true){
-                anim.SetBool("isTrigger", true);
-            }*/
         }
 
     }

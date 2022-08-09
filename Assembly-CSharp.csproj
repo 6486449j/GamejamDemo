@@ -35,17 +35,6 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.9</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2020.3.14f1c1</UnityVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\A2\A2Trigger\Drug3.cs" />
      <Compile Include="Assets\Script\Tool\Notice.cs" />
@@ -64,6 +53,7 @@
      <Compile Include="Assets\Script\A2\A2Audio\A2Bgm.cs" />
      <Compile Include="Assets\Script\A3\KeyBox.cs" />
      <Compile Include="Assets\Script\A1\A1Door.cs" />
+     <Compile Include="Assets\Script\Menu\MainMenu.cs" />
      <Compile Include="Assets\Script\A2\PerformentLight.cs" />
      <Compile Include="Assets\Script\Main.cs" />
      <Compile Include="Assets\Script\A1\A1Footstep.cs" />
@@ -76,7 +66,10 @@
      <Compile Include="Assets\Script\A1\DelaySound.cs" />
      <Compile Include="Assets\Script\A2\A2Trigger\Pre1.cs" />
      <Compile Include="Assets\Script\Tool\Transfer.cs" />
+     <Compile Include="Assets\Script\Menu\GameMenu.cs" />
+     <Compile Include="Assets\Script\A1\NewspaperTrigger.cs" />
      <Compile Include="Assets\Script\A4\MainPerform.cs" />
+     <Compile Include="Assets\Script\A3\A31\A31Audio\A31Footstep.cs" />
      <Compile Include="Assets\Script\A4\A4Trigger\Hole.cs" />
      <Compile Include="Assets\Script\A2\A2Trigger\MissionDoorOut.cs" />
      <Compile Include="Assets\Script\Tool\ScenLoader.cs" />
@@ -91,15 +84,18 @@
      <Compile Include="Assets\Script\A2\PastHosDoorIn.cs" />
      <Compile Include="Assets\Script\A4\A4Audio\A4Bgm.cs" />
      <Compile Include="Assets\Script\Tool\LightFlicker.cs" />
+     <Compile Include="Assets\Script\A3\A31\A31Level.cs" />
      <Compile Include="Assets\Script\Tool\PortalManager.cs" />
      <Compile Include="Assets\Script\A2\A2Trigger\Drug2.cs" />
      <Compile Include="Assets\Script\A1\A1SoundManager.cs" />
      <Compile Include="Assets\Script\A2\A2Trigger\Pre2.cs" />
+     <Compile Include="Assets\Script\A3\A31\A31In.cs" />
      <Compile Include="Assets\Script\Tool\Portal.cs" />
      <Compile Include="Assets\Script\A1\Level_1.cs" />
      <Compile Include="Assets\Script\A2\PerformentWall.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
      <Compile Include="Assets\Script\A3\ExitDoor.cs" />
+     <Compile Include="Assets\Script\A3\A31\A31Out.cs" />
      <Compile Include="Assets\Script\A2\A2Trigger\MissionDoorIn.cs" />
      <Compile Include="Assets\Script\A3\PortalA3.cs" />
      <Compile Include="Assets\Script\A2\A2Trigger\MissionWindow.cs" />
@@ -108,6 +104,7 @@
      <Compile Include="Assets\Script\ContinueDialogue.cs" />
      <Compile Include="Assets\Script\Game\SoundManager.cs" />
      <Compile Include="Assets\Script\A2\PastHosDoorOut.cs" />
+     <Compile Include="Assets\Script\A3\A31\A31Audio\A31Bgm.cs" />
      <Compile Include="Assets\Script\A2\A2Trigger\StairUp.cs" />
      <Compile Include="Assets\Script\A2\A2BoundList.cs" />
      <Compile Include="Assets\Script\A2\Level2.cs" />
@@ -875,7 +872,6 @@
   <ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

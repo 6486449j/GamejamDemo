@@ -9,14 +9,14 @@ public class EnDoor : MonoBehaviour
 
     Light2D lights;
     public float intensity = 0.1f;
-    bool isin=false;
+    bool onTrigger = false;
     void Start()
     {
         lights = light_.GetComponent<Light2D>();
     }
     void Update()
     {
-        if (isin)
+        if (onTrigger)
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
@@ -30,10 +30,16 @@ public class EnDoor : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isin = true;
+        if (collision.gameObject.tag == "Player")
+        {
+            onTrigger = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isin = false;
+        if (collision.gameObject.tag == "Player")
+        {
+            onTrigger = false;
+        }
     }
 }

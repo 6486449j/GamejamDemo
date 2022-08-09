@@ -95,7 +95,6 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("isFlash", false);
             }
         }
-        // 传送
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

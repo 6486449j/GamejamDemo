@@ -126,6 +126,12 @@
     <Compile Include="Assets\Script\A1\A1light.cs" />
     <Compile Include="Assets\Script\Menu\MainMenu.cs" />
     <Compile Include="Assets\Script\Menu\GameMenu.cs" />
+    <Compile Include="Assets\Script\A3\A31\A31In.cs" />
+    <Compile Include="Assets\Script\A3\A31\A31Out.cs" />
+    <Compile Include="Assets\Script\A3\A31\A31Audio\A31Bgm.cs" />
+    <Compile Include="Assets\Script\A3\A31\A31Audio\A31Footstep.cs" />
+    <Compile Include="Assets\Script\A3\A31\A31Level.cs" />
+    <Compile Include="Assets\Script\A1\NewspaperTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

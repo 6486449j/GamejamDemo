@@ -58,6 +58,6 @@ public class ExitDoor : MonoBehaviour
     {
         at.SetTrigger("Start");
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene("Level_4");
+        SceneManager.LoadScene("Level_3_1");
     }
 }

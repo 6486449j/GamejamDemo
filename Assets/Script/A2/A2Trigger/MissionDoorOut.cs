@@ -5,6 +5,8 @@ using UnityEngine;
 public class MissionDoorOut : MonoBehaviour
 {
     bool onTrigger = false;
+    public Animator anim;
+
     void Start()
     {
 
@@ -21,7 +23,11 @@ public class MissionDoorOut : MonoBehaviour
                 A2SoundManager.Instance.initdoor();
                 A2SoundManager.Instance.PlaySound();
             }
+            /*if(Level2.isRun = true){
+                anim.SetBool("isTrigger", true);
+            }*/
         }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

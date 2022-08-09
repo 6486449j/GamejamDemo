@@ -35,9 +35,9 @@ public class EndPortal : MonoBehaviour
     }
     private void End(GameObject s)
     {
-        player.transform.position = v2;
-        StartCoroutine(Go());
         //player.transform.position = v2;
+        StartCoroutine(Go());
+        player.transform.position = v2;
     }
     IEnumerator Go()
     {

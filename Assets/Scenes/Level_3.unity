@@ -1082,9 +1082,9 @@ RectTransform:
   m_Father: {fileID: 92627636}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -523, y: 200}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 118, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &88268358
@@ -5271,8 +5271,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u7EE7\u7EED"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: -5638832787527207368, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6754,7 +6754,7 @@ MonoBehaviour:
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
-  m_sharedMaterial: {fileID: 6776209776837984092, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: -5638832787527207368, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9111,8 +9111,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u91CD\u8F7D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: -5638832787527207368, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11205,7 +11205,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12965,8 +12965,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u9000\u51FA"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: -5638832787527207368, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21547,7 +21547,7 @@ MonoBehaviour:
   m_text: Here's a big long line of dialogue, ready to be shown to the player.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
-  m_sharedMaterial: {fileID: 6776209776837984092, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: -5638832787527207368, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22328,7 +22328,7 @@ MonoBehaviour:
   m_text: Last line
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
-  m_sharedMaterial: {fileID: 6776209776837984092, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
+  m_sharedMaterial: {fileID: -5638832787527207368, guid: 312b1fd356bb09b499de38bf6348623a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
